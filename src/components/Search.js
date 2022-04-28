@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
-import '../styles/scss/search.scss';
+import "../styles/scss/search.scss";
 import Post from "./Post";
 
 function Search() {
@@ -28,7 +28,7 @@ function Search() {
           <Post key={post.id} userId={post.userId} id={post.id} />
         ))
       ) : (
-        <span className="empty">Can not found the post with that title!</span>
+        <span className="empty">Couldn't find the post with that title!</span>
       )}
     </div>
   );
