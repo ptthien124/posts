@@ -28,7 +28,7 @@ function Search() {
           <Post key={post.id} userId={post.userId} id={post.id} />
         ))
       ) : (
-        <span className="empty">Can not found the post have that title!</span>
+        <span className="empty">Can not found the post with that title!</span>
       )}
     </div>
   );
