@@ -9,14 +9,14 @@ function Header() {
 
   const handleSubmitBtnClick = () => {
     const input = document.querySelector(".searchInput");
-    if (input.value !== "") navigate(`/post/search/key=${inputValue}`);
+    if (input.value !== "") navigate(`/posts/search/key=${inputValue}`);
   };
 
   const handleEnterKeyDown = (e) => {
     if (e.which === 13) {
       const input = document.querySelector(".searchInput");
       if (input === document.activeElement && input.value !== "") {
-        navigate(`/post/search/key=${input.value}`);
+        navigate(`/posts/search/key=${input.value}`);
       }
     }
   };

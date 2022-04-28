@@ -35,9 +35,9 @@ function App() {
   return (
     <div className="app">
       <Routes>
-        <Route path="/post" element={<Home />} />
-        <Route path="/post/postPage/:id" element={<PostPage />} />
-        <Route path="/post/search/:key" element={<Search />} />
+        <Route path="/posts" element={<Home />} />
+        <Route path="/posts/postPage/:id" element={<PostPage />} />
+        <Route path="/posts/search/:key" element={<Search />} />
       </Routes>
     </div>
   );

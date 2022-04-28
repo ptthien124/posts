@@ -80,7 +80,7 @@ function Post({ id, userId }) {
   }, []);
 
   return (
-    <Link to={`/post/postPage/:${id}`} style={{ textDecoration: "none" }}>
+    <Link to={`/posts/postPage/:${id}`} style={{ textDecoration: "none" }}>
       <div className="post">
         <div className="post__heading">
           <p>{user && user.username}</p>
